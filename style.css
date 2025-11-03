@@ -1,3 +1,120 @@
+/* ===== General Layout ===== */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+header {
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+nav {
+  background-color: #444;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 0;
+}
+
+nav ul li a.active,
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  text-align: center;
+  background-color: #222;
+  color: #fff;
+  padding: 15px 0;
+  margin-top: 20px;
+}
+
+/* ===== Hero Section ===== */
+.hero {
+  text-align: center;
+  margin: 20px;
+}
+
+/* ===== Gallery Section ===== */
+.gallery-section {
+  max-width: 1000px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.gallery-item {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  width: 200px;
+}
+
+.gallery-item img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.gallery-item p {
+  margin-top: 10px;
+  font-size: 0.9rem;
+}
+
+/* ===== Accordion FAQ Section ===== */
+.accordion {
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+.accordion-item {
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  background-color: #fff;
+}
+
+.accordion-item h3 {
+  margin: 0;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.accordion-item .accordion-body {
+  display: none;
+  padding: 10px;
+}
+
+.accordion-item.active .accordion-body {
+  display: block;
+}
+
+/* ===== Form Section ===== */
 .form-section {
   max-width: 600px;
   margin: 20px auto;
