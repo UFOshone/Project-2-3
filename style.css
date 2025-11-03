@@ -1,180 +1,58 @@
-
-header h1, .hero h2, .form-section h2, .gallery-section h2 {
-  color: #39ff14; /* bright neon green */
-  text-align: center;
-  text-shadow:
-     0 0 5px #39ff14,
-     0 0 10px #39ff14,
-     0 0 20px #39ff14,
-     0 0 40px #0fa,
-     0 0 80px #0fa;
-}
-nav ul li a {
-  transition: all 0.3s ease;
-}
-
-nav ul li a:hover {
-  color: #39ff14;
-  text-shadow:
-    0 0 5px #39ff14,
-    0 0 10px #39ff14,
-    0 0 20px #39ff14;
-}
-
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  background-color: #f0f0f0;
-  color: #333;
-}
-
-header {
-  background-color: #222;
-  color: #fff;
-  text-align: center;
-  padding: 20px 0;
-}
-
-nav {
-  background-color: #444;
-}
-
-nav ul {
-  display: flex;
-  justify-content: center;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-nav ul li {
-  margin: 0 15px;
-}
-
-nav ul li a {
-  color: #fff;
-  text-decoration: none;
-  padding: 10px 0;
-}
-
-nav ul li a.active,
-nav ul li a:hover {
-  text-decoration: underline;
-}
-
-footer {
-  text-align: center;
-  background-color: #222;
-  color: #fff;
-  padding: 15px 0;
-  margin-top: 20px;
-}
-
-/* ===== Hero Section ===== */
-.hero {
-  text-align: center;
-  margin: 20px;
-}
-
 /* ===== Gallery Section ===== */
 .gallery-section {
   max-width: 1000px;
-  margin: 20px auto;
+  margin: 40px auto;
   text-align: center;
+}
+
+.gallery-section h2 {
+  font-size: 2.2rem;
+  margin-bottom: 30px;
+  color: #39ff14; /* neon green */
+  text-shadow:
+    0 0 5px #39ff14,
+    0 0 10px #39ff14,
+    0 0 20px #39ff14,
+    0 0 40px #0fa,
+    0 0 80px #0fa;
 }
 
 .gallery {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 30px;
 }
 
-.gallery-item {
-  background-color: #fff;
-  padding: 10px;
-  border-radius: 8px;
-  border: 1px solid #ccc;
-  width: 200px;
-}
-
-.gallery-item img {
-  width: 100%;
-  border-radius: 5px;
-}
-
-.gallery-item p {
-  margin-top: 10px;
-  font-size: 0.9rem;
-}
-
-/* ===== Accordion FAQ Section ===== */
-.accordion {
-  max-width: 800px;
-  margin: 20px auto;
-}
-
-.accordion-item {
-  border: 1px solid #aaa;
-  border-radius: 5px;
-  margin-bottom: 10px;
-  background-color: #fff;
-}
-
-.accordion-item h3 {
-  margin: 0;
-  padding: 10px;
-  cursor: pointer;
-}
-
-.accordion-item .accordion-body {
-  display: none;
-  padding: 10px;
-}
-
-.accordion-item.active .accordion-body {
-  display: block;
-}
-
-/* ===== Form Section ===== */
-.form-section {
-  max-width: 600px;
-  margin: 20px auto;
-  padding: 20px;
-  background-color: #f4f4f4;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-}
-
-form label {
-  display: block;
-  margin-bottom: 5px;
-  font-weight: bold;
-}
-
-form input,
-form select,
-form textarea {
-  width: 100%;
-  padding: 8px;
-  margin-bottom: 15px;
-  border: 1px solid #aaa;
-  border-radius: 4px;
-}
-
-form input[type="submit"],
-form input[type="reset"] {
-  width: auto;
-  padding: 10px 20px;
-  margin-right: 10px;
-  cursor: pointer;
-  background-color: #444;
+.gallery-card {
+  background-color: #111;
   color: #fff;
-  border: none;
-  border-radius: 4px;
+  width: 250px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 15px #39ff14;
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
-form input[type="submit"]:hover,
-form input[type="reset"]:hover {
-  background-color: #222;
+.gallery-card img {
+  width: 100%;
+  display: block;
+}
+
+.gallery-card h3 {
+  margin: 15px 0 5px;
+  font-size: 1.2rem;
+  color: #39ff14;
+  text-shadow: 0 0 5px #39ff14, 0 0 10px #0fa;
+}
+
+.gallery-card p {
+  padding: 0 10px 15px;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.gallery-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px #39ff14, 0 0 50px #0fa;
 }
